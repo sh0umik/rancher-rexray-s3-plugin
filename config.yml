@@ -11,8 +11,6 @@ libstorage:
 s3fs:
   accessKey: S3FS_ACCESSKEY
   secretKey: S3FS_SECRETKEY
-  endpoint: S3FS_ENTRY
   options:
-    - use_path_request_style
     - allow_other
     - nonempty
