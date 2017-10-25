@@ -1,3 +1,5 @@
+rexray:
+  logLevel: info
 libstorage:
   service: s3fs
   integration:
