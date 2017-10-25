@@ -9,7 +9,7 @@ RUN git clone https://github.com/s3fs-fuse/s3fs-fuse.git && cd s3fs-fuse && ./au
 RUN rm -rf /var/cache/apk/*
 
 RUN mkdir -p /lib64 && ln -s /lib/libc.musl-x86_64.so.1 /lib64/ld-linux-x86-64.so.2
-RUN mkdir -p /etc/rexray /run/docker/plugins /var/lib/rancher/volumes
+RUN mkdir -p /etc/rexray /run/docker/plugins /var/lib/rexray/volumes
 
 RUN /usr/bin/curl -sSL https://dl.bintray.com/emccode/rexray/install | sh -s stable
 

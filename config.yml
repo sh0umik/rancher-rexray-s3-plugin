@@ -12,4 +12,7 @@ s3fs:
   accessKey: S3FS_ACCESSKEY
   secretKey: S3FS_SECRETKEY
   endpoint: S3FS_ENTRY
-  options: S3FS_OPTIONS
+  options:
+    - use_path_request_style
+    - allow_other
+    - nonempty
