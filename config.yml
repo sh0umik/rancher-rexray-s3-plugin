@@ -1,7 +1,8 @@
 rexray:
-  logLevel: info
+  logLevel: debug
 libstorage:
-  service: s3fs
+  logging:
+    level: debug
   integration:
     volume:
       operations:
