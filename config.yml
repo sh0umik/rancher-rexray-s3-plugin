@@ -1,8 +1,6 @@
 rexray:
   logLevel: debug
 libstorage:
-  logging:
-    level: debug
   service: s3fs
   integration:
     volume:
@@ -13,7 +11,6 @@ s3fs:
   endpoint: S3FS_ENTRY
   accessKey: S3FS_ACCESSKEY
   secretKey: S3FS_SECRETKEY
-  region: us-east-1
   options:
     - url=S3FS_ENTRY
     - use_path_request_style
